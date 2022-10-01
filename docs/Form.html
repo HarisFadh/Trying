@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pembuatan Form</title>
+	<h1>Form HTML</h1>
+</head>
+
+<body>
+	<hr>
+	<fieldset>
+		<form action="form_input" method="get" enctype="multipart/form-data">
+			Name: <input type="text" name="Name" maxlength="100"><br><br>
+			Gender: <input type="radio" name="Gender" value="Male">Male
+				   <input type="radio" name="Gender" value="Female">Female
+				   <br><br>
+			Address: <input type="text" name="Adress" maxlength="100"><br>
+			<br>
+			Country: <select>
+				<option value="Indonesia">Indonesia</option>
+				<option value="Malaysia">Malaysia</option>
+				<option value="Singapore">Singapore</option>
+				<option value="Philippines">Philippines</option>
+				<option value="Thailand ">Thailand</option>
+				<option value="Vietnam">Vietnam</option>
+				<option value="Cambodia">Cambodia</option>
+				<option value="Myanmar">Myanmar</option>
+			</select><br><br>
+			E-mail: <input type="text" name="E-mail" maxlength="50"><br><br>
+			Photo: <input type="file" name="Photo"><br><br>	
+			Comment: <textarea cols="70" rows="7"></textarea>
+			<input type="submit">
+			<center><b>Form Registrasi</b></center>
+	</fieldset>
+</body>
+</html>
