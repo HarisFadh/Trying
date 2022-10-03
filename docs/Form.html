@@ -10,13 +10,14 @@
 	<hr>
 	<fieldset>
 		<form action="form_input" method="get" enctype="multipart/form-data">
-			Name: <input type="text" name="Name" maxlength="100"><br><br>
-			Gender: <input type="radio" name="Gender" value="Male">Male
-				   <input type="radio" name="Gender" value="Female">Female
+			Name: <input type="text" name="Name" maxlength="100" required><br><br>
+			Gender: <input type="radio" name="Gender" value="Male" required >Mal
+				   <input type="radio" name="Gender" value="Female" required >Female
 				   <br><br>
-			Address: <input type="text" name="Adress" maxlength="100"><br>
+			Address: <input type="text" name="Adress" maxlength="100" required><br>
 			<br>
-			Country: <select>
+			Country: <select required>
+				<option>		</option>
 				<option value="Indonesia">Indonesia</option>
 				<option value="Malaysia">Malaysia</option>
 				<option value="Singapore">Singapore</option>
@@ -26,9 +27,11 @@
 				<option value="Cambodia">Cambodia</option>
 				<option value="Myanmar">Myanmar</option>
 			</select><br><br>
-			E-mail: <input type="text" name="E-mail" maxlength="50"><br><br>
-			Photo: <input type="file" name="Photo"><br><br>	
-			Comment: <textarea cols="70" rows="7"></textarea>
+			E-mail: <input type="email" name="E-mail" required><br><br>
+			Password: <input type="password" name="Password" required><br><br>	
+			ID: <input type="text" name="id" pattern="[A-Z]{2}[0-9]{3}" title="2 huruf kapital dan 3 angka" required><br><br>	
+			Photo:<input type="text" name="" placeholder="masukan photo"> <input type="file" name="Photo" required><br><br>	
+			Comment: <textarea cols="70" rows="7" placeholder="Tulis disini" required></textarea>
 			<input type="submit">
 			<center><b>Form Registrasi</b></center>
 	</fieldset>
